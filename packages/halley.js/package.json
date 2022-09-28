@@ -1,11 +1,14 @@
 {
-  "name": "@laniakea.js/halley.http",
+  "name": "halley.http",
   "author": "Raxabi <future contact email>",
   "publisher": "Halley Software",
   "version": "0.1.0",
   "contributors": [
     "Raxabi"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "The small, fast and easy Web Framework part of Laniakea Package Group, named Halley.http too. Inspired in Express",
   "keywords": [
     "framework",
@@ -32,7 +35,8 @@
     "test": "nodemon test/index.ts"
   },
   "files": [
-    "dist/index.js",
+    "package.json",
+    "dist/",
     "contributors.js",
     "README.md",
     "LICENSE"

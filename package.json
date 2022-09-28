@@ -1,0 +1,34 @@
+{
+  "name": "laniakea.js",
+  "author": "Raxabi <future contact email>",
+  "publisher": "Halley Software",
+  "version": "0.1.0",
+  "contributors": [
+    "Raxabi"
+  ],
+  "description": "Laniakea Package Group. LPG. Is a group of frameworks and utilities focused on Web Development using JavaScript and TypeScript",
+  "workspaces": [
+    "packages/halley.js"
+  ],
+  "keywords": [
+    "web",
+    "delevopment",
+    "api",
+    "rest",
+    "crud",
+    "backend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halley-Software/Laniakea.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Halley-Software/Laniakea.js/issues"
+  },
+  "homepage": "https://github.com/Halley-Software/Laniakea.js#readme",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "CHalley": "npm install && cd packages/halley.js && npm run compile"
+  }
+}

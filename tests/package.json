@@ -1,20 +1,18 @@
 {
   "name": "tests",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.ts",
+    "recompile": "cd ../packages/halley.js && npm run compile"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  },
   "dependencies": {
-    "@laniakea.js/halley.http": "file:../packages/halley.js",
-    "mongoose": "^6.6.2"
+    "halley.http": "file:../packages/halley.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
   }
 }

@@ -18,7 +18,7 @@ import { readFile } from "node:fs/promises";
  */
 
 // Type Anotations
-import type * as ReplyTypes from "../HalleyTypes/Reply.types";
+import type * as ReplyTypes from "../types/Reply.types";
 
 export class Reply<Req extends IncomingMessage = IncomingMessage> extends ServerResponse<Req> {
     /**

@@ -1,3 +1,3 @@
-import { halley } from "./main.js"
+import { halley, HColor } from "./main.js"
 
-halley.ready(5000)
+halley.ready(3000, HColor.print("cyan"))

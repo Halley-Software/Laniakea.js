@@ -14,11 +14,9 @@ import { isAbsolute } from "node:path"
 import { readFile } from "node:fs/promises";
 
 /**
- * Halley.JS dependencies
+ * A type wrapper for primitive and non-primitive data types
  */
-
-// Type Anotations
-import type * as ReplyTypes from "../types/Reply.types";
+export type body = string | number | boolean | object | Buffer;
 
 export class Reply<Req extends IncomingMessage = IncomingMessage> extends ServerResponse<Req> {
     /**
@@ -36,7 +34,7 @@ export class Reply<Req extends IncomingMessage = IncomingMessage> extends Server
 
     /**
      * Send any data as a response 
-     * @param {ReplyTypes.body} body The body type is a type of types, that is, that it's a types wrapper
+     * @param {body} body The body type is a type of types, that is, that it's a types wrapper
      * @returns `this` object
      * 
      * `body` can accept the follow primitive and non-primitive data types:
@@ -47,7 +45,7 @@ export class Reply<Req extends IncomingMessage = IncomingMessage> extends Server
      * * `object` - Can be an `Array`, literal object, `Date` or `Null`
      * * `Buffer` - Buffer < 60 80 10 >
      */
-    public send(body: ReplyTypes.body): this {
+    public send(body: body): this {
         this.end(body);
         return this;
     }
